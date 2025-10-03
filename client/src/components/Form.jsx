@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import {toast} from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -25,10 +25,10 @@ export default function Form() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/pdf/submit",
+        "https://document-85hq.onrender.com/api/pdf/submit",
         formData
       );
-      toast.success("Form Submitted Successfully")
+      toast.success("Form Submitted Successfully");
       // setMessage(
       //   `NOC generated successfully! Download here: ${res.data.nocDownloadUrl}`
       // );

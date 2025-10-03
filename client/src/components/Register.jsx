@@ -18,7 +18,7 @@ export default function Register() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/auth/register",
+        "https://document-85hq.onrender.com/api/auth/register",
         formData
       );
       toast.success("Registration successful!"); // ✅ Show success toast

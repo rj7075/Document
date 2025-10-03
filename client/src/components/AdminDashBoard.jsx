@@ -9,7 +9,7 @@ export default function AdminDashboard() {
     const fetchSubmissions = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:4000/api/pdf/submissions"
+          "https://document-85hq.onrender.com/api/pdf/submissions"
         );
         setSubmissions(res.data);
       } catch (err) {
@@ -77,13 +77,13 @@ export default function AdminDashboard() {
                       </td>
                       <td className="py-3 px-4 flex gap-2 whitespace-nowrap">
                         <a
-                          href={`http://localhost:4000/api/pdf/download/noc/${item.fileName}`}
+                          href={`https://document-85hq.onrender.com/api/pdf/download/noc/${item.fileName}`}
                           className="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded text-sm"
                         >
                           Download NOC
                         </a>
                         <a
-                          href={`http://localhost:4000/api/pdf/download/lease/${item.leaseFileName}`}
+                          href={`https://document-85hq.onrender.com/api/pdf/download/lease/${item.leaseFileName}`}
                           className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded text-sm"
                         >
                           Download Lease
